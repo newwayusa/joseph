@@ -1,50 +1,32 @@
-import java.awt.*;
+Here’s the revised version with your new objectives included:  
 
-public class MouseMover {
-    public static void main(String[] args) {
-        try {
-            // Create an instance of the Robot class
-            Robot robot = new Robot();
+---
 
-            // Get screen dimensions
-            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-            int screenWidth = screenSize.width;
-            int screenHeight = screenSize.height;
+### **Company Objectives for the Year – 2025**  
 
-            // Calculate the center of the screen
-            int centerX = screenWidth / 2;
-            int centerY = screenHeight / 2;
+At **New Way Solutions LLC**, we are committed to driving technological innovation, operational efficiency, and continuous learning. Our key objectives for the year include:  
 
-            // Side length of the square
-            int squareSize = 100; // 100 pixels
+1. **Implementation of NOPE Changes for ECI**  
+   - Enhance and optimize the NOPE framework to align with ECI changes, ensuring improved performance, security, and compliance with industry standards.  
 
-            while (true) {
-                // Move mouse in a square pattern
+2. **Completion of Test Automation for ECI**  
+   - Finalize the automation of testing processes for ECI, reducing manual efforts, improving accuracy, and accelerating deployment timelines.  
 
-                // Top-left corner
-                robot.mouseMove(centerX - squareSize / 2, centerY - squareSize / 2);
-                Thread.sleep(1000);
+3. **SSO Implementation in Pirum and Production Rollout**  
+   - Successfully integrate Single Sign-On (SSO) within the Pirum platform and execute a full-scale production rollout, ensuring seamless and secure user authentication across all users.  
 
-                // Top-right corner
-                robot.mouseMove(centerX + squareSize / 2, centerY - squareSize / 2);
-                Thread.sleep(1000);
+4. **Implementation of Record Management in the Pirum Project**  
+   - Develop and deploy a robust record management system within the Pirum project to enhance data organization, compliance, and accessibility.  
 
-                // Bottom-right corner
-                robot.mouseMove(centerX + squareSize / 2, centerY + squareSize / 2);
-                Thread.sleep(1000);
+5. **Gaining Knowledge of Different Projects in the Pod**  
+   - Deepen the team’s understanding of various projects, including **ECI, Pirum, and LonatMQ**, to enhance cross-functional collaboration, improve problem-solving capabilities, and ensure efficient project execution.  
 
-                // Bottom-left corner
-                robot.mouseMove(centerX - squareSize / 2, centerY + squareSize / 2);
-                Thread.sleep(1000);
+6. **Certification and Professional Development**  
+   - **Achieve Azure Fundamentals Certification**: Equip the team with foundational cloud computing skills by obtaining the **Microsoft Azure Fundamentals (AZ-900)** certification.  
+   - **UBS Certified Engineer Program**: Successfully complete the certification process to become a **UBS Certified Engineer**, strengthening expertise in financial technology and enterprise solutions.  
 
-                // Return to the top-left corner
-                robot.mouseMove(centerX - squareSize / 2, centerY - squareSize / 2);
+These initiatives align with our commitment to innovation, security, operational excellence, and continuous professional development, ensuring efficiency and value for all stakeholders.  
 
-                // Wait 5 seconds before repeating
-                Thread.sleep(5000);
-            }
-        } catch (AWTException | InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}
+---
+
+Let me know if you need further refinements!
